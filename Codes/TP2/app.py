@@ -16,6 +16,10 @@ def main():
 
     print("\nCamion 2:")
     c2.afficher()
+    print("Changer la charge du camion 2 à 6 tonnes")
+    c2.setCharge(6)
+    c2.afficher()
+
     
     print("\nTaxi:")
     t1.afficher()
