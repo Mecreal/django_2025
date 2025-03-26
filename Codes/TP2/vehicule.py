@@ -3,7 +3,7 @@
 class Vehicule:
     """Classe de base pour tous les véhicules"""
     
-    def __init__(self, immatriculation, annee_achat, poids_vide):
+    def __init__(self, immatriculation:str, annee_achat:int, poids_vide:int):
         """
         Constructeur de la classe Vehicule
         
@@ -16,14 +16,14 @@ class Vehicule:
         self.annee_achat = annee_achat
         self.poids_vide = poids_vide
     
-    def afficher(self):
+    def afficher(self) -> None:
         """Affiche les informations du véhicule"""
         print(f"Immatriculation: {self.immatriculation}")
         print(f"Année d'achat: {self.annee_achat}")
         print(f"Poids à vide: {self.poids_vide} tonnes")
         print(f"Vitesse maximale: {self.vitesseMaximale()} km/h")
     
-    def vitesseMaximale(self):
+    def vitesseMaximale(self) -> int:
         """Retourne la vitesse maximale du véhicule"""
         return 0  # À surcharger dans les classes dérivées
 
